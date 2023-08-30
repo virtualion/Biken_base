@@ -16,7 +16,7 @@ body {
     #unity-container.unity-desktop {
             position: absolute;
         background: #DDDDDD;
-	width: min(60vw, 132vh);
+	width: min(85vw, 160vh);
 	border: solid;
 	height: 90vh;
         left: 50%;
@@ -27,7 +27,7 @@ body {
     #unity-container.unity-mobile {
             position: absolute;
         width: 100%;
-        height: 100%
+        height: 100%;
         background: #DDDDDD;
         left: 50%;
         top: 50%;
@@ -36,8 +36,9 @@ body {
     }
 
 #unity-canvas {
-    background: #FFFFFF
+    background: #FFFFFF;
 }
+
 
 .unity-mobile #unity-canvas {
     width: 100%;
@@ -47,21 +48,26 @@ body {
 #unity-loading-bar {
     position: absolute;
     left: 50%;
-    top: 80%
+    top: 80%;
     transform: translate(-50%, -50%);
     display: none
 }
 
 #unity-logo {
     position: absolute;
-    width: 100%;
-    height: 100%;
-	//border: solid;
+    width: 50vh;
+    height: 30vh;
+	/*border: solid;*/
     transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
-background-size: 440px 248px;
-    background: url('biken_kidou.gif') no-repeat center
+    background: url('unity-logo-light.gif') no-repeat center
+	border: solid #fff;
+}
+
+.load_gif{
+	width: 100%;
+	height: 100%;
 }
 
 
