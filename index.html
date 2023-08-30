@@ -10,11 +10,9 @@
   </head>
   <body>
 
-
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas"></canvas>
-      <div id="unity-logo"></div>
-
+      <div id="unity-logo"><img src="TemplateData/unity-logo-light.gif" class="load_gif"></div>
       <div id="unity-loading-bar">
         <div id="unity-progress-bar-empty">
           <div id="unity-progress-bar-full"></div>
@@ -33,7 +31,25 @@
 <label for="trigger" class="popup_trigger"></label>
 <div class="popup_content">
 <label for="trigger" class="close_btn">×</label>
-<p>aaaa</p>
+<p>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+移動<br>
+<img class="ppimg" src="TemplateData/instr/001.png"><br>
+<img class="ppimg" src="TemplateData/instr/002.png"><br>
+
+<br>
+キャプション<br>
+<img class="ppimg" src="TemplateData/instr/003.png"><br>
+
+<br>
+動画<br>
+<img class="ppimg" src="TemplateData/instr/004.png"><br>
+
+
+
+</p>
 </div></div></div>
 
 
@@ -94,7 +110,7 @@ left: 81%;
       // the canvas DOM size and WebGL render target sizes yourself.
       // config.matchWebGLToCanvasSize = false;
 
-      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+      /*if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // container.className = "unity-mobile";
         // Avoid draining fillrate performance on mobile devices,
         // and default/override low DPI mode on mobile browsers.
@@ -106,7 +122,11 @@ left: 81%;
       } else {
         canvas.style.width = "100%";
         canvas.style.height = "100%";
-      }
+      }*/
+
+      canvas.style.width = "100%";
+      canvas.style.height = "100%";
+
       canvas.style.background = "url('" + buildUrl + "/Basen.jpg') center / cover";
       loadingBar.style.display = "block";
 
